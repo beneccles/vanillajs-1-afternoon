@@ -1,3 +1,8 @@
+<!--Sound Effects by Litte Robot Sound Factory, littlerobotsoundfactory.com.
+  Used under Creative Commons License (CC BY 3.0)
+  https://opengameart.org/content/8-bit-sound-effects-library
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,29 +15,32 @@
 
 <body>
   <nav>
-    <h1>Tic Tac Toe Board!</h1>
+    <h1>Tic Tac Foes!</h1>
   </nav>
   <main>
     <table>
       <tr class="row">
-        <td id="0" onclick="play(0)"></td>
-        <td id="1" onclick="play(1)"></td>
-        <td id="2" onclick="play(2)"></td>
+        <td id="0" onclick="play(0); playAudio('./Hit_01.mp3')"></td>
+        <td id="1" onclick="play(1); playAudio('./Hit_00.mp3')"></td>
+        <td id="2" onclick="play(2); playAudio('./Hit_01.mp3')"></td>
       </tr>
       <tr class="row">
-        <td id="3" onclick="play(3)"></td>
-        <td id="4" onclick="play(4)"></td>
-        <td id="5" onclick="play(5)"></td>
+        <td id="3" onclick="play(3); playAudio('./Hit_00.mp3')"></td>
+        <td id="4" onclick="play(4); playAudio('./Hit_01.mp3')"></td>
+        <td id="5" onclick="play(5); playAudio('./Hit_00.mp3')"></td>
       </tr>
       <tr class="row">
-        <td id="6" onclick="play(6)"></td>
-        <td id="7" onclick="play(7)"></td>
-        <td id="8" onclick="play(8)"></td>
+        <td id="6" onclick="play(6); playAudio('./Hit_01.mp3')"></td>
+        <td id="7" onclick="play(7); playAudio('./Hit_00.mp3')"></td>
+        <td id="8" onclick="play(8); playAudio('./Hit_01.mp3')"></td>
       </tr>
     </table>
+    <div class="control">
     <span>Player </span>
     <span id="player">X</span>
-    <span>'s turn</span>
+    <span>'s turn </span>
+    <button type="button" onclick="clearBoard()">Reset</button>
+    </div>
   </main>
 </body>
 <script src="./index.js"></script>

@@ -33,4 +33,20 @@
     border: 1px solid #000;
     text-align: center;
     font-size: 2em;
+    border-radius: 10px;
+}
+
+.control {
+    margin: 20px;
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+}
+
+button {
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
 }
