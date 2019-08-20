@@ -53,3 +53,17 @@ section span:nth-of-type(3) {
   width: 100px;
   border: 1px solid #000;
 }
+
+.inputs {
+  text-align: center;
+}
+
+input {
+  display: inline-block;
+}
+
+button {
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 10px;
+}

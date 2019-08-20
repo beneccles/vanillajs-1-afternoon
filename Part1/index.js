@@ -4,6 +4,7 @@ let moveCount = 0;
 function clearBoard(){
     let currentId = document.getElementsByTagName('td');
     board.splice(0, 9);
+    movrCount = 0;
 
     for (let i = 0; i < 9; i++){
         currentId[i].innerText = "";
